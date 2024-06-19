@@ -10,7 +10,8 @@ def int_gauss(n,k_lim):
     m = n+1
     T_low = np.zeros((m,m))
     T_up = np.zeros((m,m))
-    T = np.zeros((m,m))
+    # T = np.zeros((m,m))
+    T = np.zeros((m**2,m/3)) #invento Fran
 
     # defino T_low
     for i in range(0,m):
