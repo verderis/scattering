@@ -1993,10 +1993,10 @@ def Y7TE_F2_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d):
     return 1j*((t1 - t2)*suma1 + (t3 - t4)*s1z_val + t5)
 
 def q7TE_F1_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d):
-    return L17TE(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d) + Y7TE_F1(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d)
+    return L17TE_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d) + Y7TE_F1_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d)
 
 def q7TE_F2_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d):
-    return L17TE(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d) + Y7TE_F2(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d)
+    return L17TE_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d) + Y7TE_F2_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d)
 
 def L18TE_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d):
     b0HH_val = b0HH(k0, thi,ep1,ep2,d)
@@ -2342,12 +2342,12 @@ def Y2TM_F1_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d):
     return 1j*(t1 + t2 + s1z_*t4 + t5)
 
 def Y2TM_F2_j(sx,sy,k0,th,ph,thi,phi,ep1,ep2,d):
-    a1HVF2_ = a1HVF2(k0, thi, phi, th, ph, ep1, ep2, d)
-    a1VVF2_ = a1VVF2(k0, thi, phi, th, ph, ep1, ep2, d)
-    bb1VVF2_ = bb1VVF2(k0, thi, phi, th, ph, ep1, ep2, d)
-    b1VVF2_ = b1VVF2(k0, thi, phi, th, ph, ep1, ep2, d)
-    bb1HVF2_ = bb1HVF2(k0, thi, phi, th, ph, ep1, ep2, d)
-    b1HVF2_ = b1HVF2(k0, thi, phi, th, ph, ep1, ep2, d)
+    a1HVF2_ = a1HVF2_j(k0, thi, phi, th, ph, ep1, ep2, d)
+    a1VVF2_ = a1VVF2_j(k0, thi, phi, th, ph, ep1, ep2, d)
+    bb1VVF2_ = bb1VVF2_j(k0, thi, phi, th, ph, ep1, ep2, d)
+    b1VVF2_ = b1VVF2_j(k0, thi, phi, th, ph, ep1, ep2, d)
+    bb1HVF2_ = bb1HVF2_j(k0, thi, phi, th, ph, ep1, ep2, d)
+    b1HVF2_ = b1HVF2_j(k0, thi, phi, th, ph, ep1, ep2, d)
 
     s0z_ = s0z(k0, sx, sy)
     s1z_ = s1z(k0, sx, sy, ep1)
